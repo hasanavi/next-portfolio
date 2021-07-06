@@ -3,10 +3,10 @@ import KeeptInTouchLink from "./KeepInTouchLink/KeepInTouchLink";
 
 import styles from "./KeepInTouch.module.css";
 
-import emailIcon from "../../assets/icons/email.svg";
-import linkedInlIcon from "../../assets/icons/linkedin.svg";
-import githubIcon from "../../assets/icons/github.svg";
-import twitterIcon from "../../assets/icons/twitter.svg";
+const emailIcon = "/images/icons/email.svg";
+const linkedInlIcon = "/images/icons/linkedin.svg";
+const githubIcon = "/images/icons/github.svg";
+const twitterIcon = "/images/icons/twitter.svg";
 
 const keepInTouch: FC = () => (
   <div className="keep-in-touch">

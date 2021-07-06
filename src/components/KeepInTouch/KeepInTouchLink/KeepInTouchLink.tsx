@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import "./KeepInTouchLink.css";
+import style from "./KeepInTouchLink.module.css";
 
 interface KeepInTouchLinkProps {
   href: string;

@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           passionate about writing clean code.
         </span>
       </Intro>
-      {/* <KeepInTouch /> */}
+      <KeepInTouch />
       <h2 className="h3 text-center">
         I&apos;ve been lucky to work on these projects:
       </h2>
