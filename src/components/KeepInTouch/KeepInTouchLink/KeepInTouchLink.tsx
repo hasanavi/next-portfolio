@@ -1,14 +1,26 @@
-import React from 'react';
+import { FC } from "react";
 
-import './KeepInTouchLink.css';
+import "./KeepInTouchLink.css";
 
-const keepInTouchLink = (props) => (
-    <li className='keep-in-touch-link'>
-        <a href={props.href} target="_blank">
-            <img src={props.img} alt={props.alt} />
-            <span>{props.text}</span>
-        </a>
-    </li>
+interface KeepInTouchLinkProps {
+  href: string;
+  img: string;
+  alt: string;
+  text: string;
+}
+
+const KeepInTouchLink: FC<KeepInTouchLinkProps> = ({
+  href,
+  img,
+  alt,
+  text,
+}) => (
+  <li className="keep-in-touch-link">
+    <a href={href} target="_blank" rel="noreferrer">
+      {/* <img src={img} alt={alt} /> */}
+      <span>{text}</span>
+    </a>
+  </li>
 );
 
-export default keepInTouchLink;
+export default KeepInTouchLink;

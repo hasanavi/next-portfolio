@@ -1,49 +1,67 @@
-import React from 'react';
+import type { FC } from "react";
 
-import './ArticleListItem.css';
+import "./ArticleListItem.css";
 
-const articleListItem = (props) => {
-    let publishDate;
-    let info2;
-    let imgColumn;
-    let articleListItemClass = 'grid-x grid-margin-x grid-padding-y article-list-item';
-    let additionalInfo;
-    
-    if(props.publishDate) {
-        publishDate = <time className="h5 article-list-item__time">{props.publishDate}</time>;
-    }
+interface articleListItemProps {
+  publishDate: string;
+  info1: string;
+  info2: string;
+  img: string;
+  title: string;
+}
 
-    if(props.info2) {
-        info2 = <React.Fragment>
-                    <span className="article-list-item__info-separator">/</span>
-                    <p className="article-list-item__info2">{props.info2}</p>
-                </React.Fragment>;
-    }
+const ArticleListItem: FC<articleListItemProps> = (props) => {
+  let publishDate;
+  let info2;
+  let imgColumn;
+  let articleListItemClass =
+    "grid-x grid-margin-x grid-padding-y article-list-item";
+  let additionalInfo;
 
-    if(props.img) {
-        imgColumn = <div className="cell small-12 medium-6 article-list-item__image-container">
-                        <img src={props.img} alt={props.title}/>
-                    </div>;
+  if (props.publishDate) {
+    publishDate = (
+      <time className="h5 article-list-item__time">{props.publishDate}</time>
+    );
+  }
 
-        articleListItemClass += ' article-list-item--with-image';
-    }
+  if (props.info2) {
+    info2 = (
+      <>
+        <span className="article-list-item__info-separator">/</span>
+        <p className="article-list-item__info2">{props.info2}</p>
+      </>
+    );
+  }
 
-    if(props.children) {
-        additionalInfo = <p className="article-list-item__additional-info">{props.children}</p>
-    }
+  if (props.img) {
+    imgColumn = (
+      <div className="cell small-12 medium-6 article-list-item__image-container">
+        {/* <img src={props.img} alt={props.title} /> */}
+      </div>
+    );
 
-    return (
-        <div className={articleListItemClass}>
-            <div className="cell small-12 medium-auto article-list-item__info-container">
-                {publishDate}
-                <h2 className="h3 article-list-item__heading">{props.title}</h2>
-                <span className="article-list-item__info-separator">/</span>
-                <p className="article-list-item__info1">{props.info1}</p>
-                {info2}
-                {additionalInfo}
-            </div>
-            {imgColumn}
-        </div>
-    )};
+    articleListItemClass += " article-list-item--with-image";
+  }
 
-export default articleListItem;
+  if (props.children) {
+    additionalInfo = (
+      <p className="article-list-item__additional-info">{props.children}</p>
+    );
+  }
+
+  return (
+    <div className={articleListItemClass}>
+      <div className="cell small-12 medium-auto article-list-item__info-container">
+        {publishDate}
+        <h2 className="h3 article-list-item__heading">{props.title}</h2>
+        <span className="article-list-item__info-separator">/</span>
+        <p className="article-list-item__info1">{props.info1}</p>
+        {info2}
+        {additionalInfo}
+      </div>
+      {imgColumn}
+    </div>
+  );
+};
+
+export default ArticleListItem;
