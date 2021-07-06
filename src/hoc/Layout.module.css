@@ -1,0 +1,55 @@
+@value colors: "../styles/Colors.module.css";
+@value profile-body-color, profile-heading-color, profile-secondary-color, profile-tertiary-color from colors;
+@value medium from "../styles/Breakpoints.module.css";
+
+.secondaryColor {
+  color: profile-secondary-color;
+}
+
+.tertiaryColor {
+  color: profile-tertiary-color;
+}
+
+.container {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  color: profile-body-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5 {
+  color: profile-heading-color;
+}
+
+.container a {
+  color: profile-heading-color;
+}
+.container a:hover,
+.container a:focus,
+.container a:active {
+  color: profile-tertiary-color;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    flex-direction: row;
+  }
+
+  .aside {
+    flex: 0 0 25%;
+  }
+
+  .main {
+    padding-left: 2rem;
+    padding-top: 75px;
+  }
+}

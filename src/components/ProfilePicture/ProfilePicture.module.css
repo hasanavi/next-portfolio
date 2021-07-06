@@ -1,0 +1,17 @@
+@value profile-border-color from '../../styles/Colors.module.css';
+
+.profilePicture {
+  margin: 30px auto 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.profilePicture img {
+  border-radius: 50%;
+}
+.profileImgContainer {
+  width: 100%;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 5px 5px 10px 1px profile-border-color;
+}

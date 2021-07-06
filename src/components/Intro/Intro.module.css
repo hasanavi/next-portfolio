@@ -1,0 +1,36 @@
+@value profile-border-color from "../../styles/Colors.module.css";
+
+.heading1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.short {
+  font-size: 32px;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top: 3px solid profile-border-color;
+  text-transform: uppercase;
+  line-height: 1.05;
+  composes: heading1;
+}
+
+.short span {
+  display: block;
+}
+
+.long {
+  font-size: 24px;
+}
+
+.long .intro-text {
+  display: block;
+}
+
+.long .intro-copy {
+  font-size: 20px;
+}

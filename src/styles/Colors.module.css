@@ -1,0 +1,12 @@
+@value avi-red: #f3373b;
+@value avi-blue: #39dcf1;
+@value avi-grey: #4e4e4e;
+@value avi-light-grey: #e1e1e1;
+@value avi-white: #ffffff;
+@value avi-black: #000000;
+
+@value profile-heading-color: avi-grey;
+@value profile-body-color: avi-black;
+@value profile-secondary-color: avi-red;
+@value profile-tertiary-color: avi-blue;
+@value profile-border-color: avi-light-grey;

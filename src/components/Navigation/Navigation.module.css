@@ -1,0 +1,13 @@
+@value profile-border-color from '../../styles/Colors.module.css';
+
+.navigation {
+  margin-bottom: 10px;
+}
+
+.navigationList {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 3px solid profile-border-color;
+}
