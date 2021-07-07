@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { FC } from "react";
 
@@ -18,7 +19,7 @@ const KeepInTouchLink: FC<KeepInTouchLinkProps> = ({
 }) => (
   <li className={styles.keepInTouchLink}>
     <a href={href} target="_blank" rel="noreferrer">
-      <Image src={img} alt={alt} width={80} height={80} />
+      <img src={img} alt={alt} />
       <span>{text}</span>
     </a>
   </li>
