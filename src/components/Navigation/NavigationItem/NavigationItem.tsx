@@ -18,7 +18,7 @@ const NavigationItem: FC<NavigationItemProps> = ({ href, text }) => {
   ];
   return (
     <li className="navigation-item">
-      <Link href={href}>
+      <Link href={href} prefetch>
         <a className={linkClasses.join(" ")}>{text}</a>
       </Link>
     </li>
