@@ -6,17 +6,13 @@ import Navigation from "../components/Navigation/Navigation";
 import TwitterTimeline from "../components/TwitterTimeline/TwitterTimeline";
 import styles from "./Layout.module.css";
 
-interface LayoutProps {
-  title?: string;
-}
-
 const siteTitle = "Hasan Azizul Haque - JavaScript Enthusiast London, UK";
 
-const Layout: FC<LayoutProps> = ({ children, title = "" }) => {
+const Layout: FC = ({ children }) => {
   return (
     <>
       <Head>
-        <title>{`${siteTitle} | ${title}`}</title>
+        <title>{siteTitle}</title>
         <meta
           name="description"
           content="I'm a London based Javascript Developer.  I love building unique, efficient site and passionate about writing clean code."

@@ -1,14 +1,13 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import Layout from "../hoc/Layout";
 import Intro from "../components/Intro/Intro";
 import KeepInTouch from "../components/KeepInTouch/KeepInTouch";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
-    <Layout title="Home">
+    <>
       <h1>About Me</h1>
       <Intro className="long">
         <span className={styles.introText}>
@@ -36,7 +35,7 @@ const Home: NextPage = () => {
           />
         </a>
       </Link>
-    </Layout>
+    </>
   );
 };
 

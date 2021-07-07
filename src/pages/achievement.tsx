@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
 import ArticleListItem from "../components/ArticleListItem/ArticleListItem";
-import Layout from "../hoc/Layout";
 
 const Achievement: NextPage = ({}) => {
   return (
-    <Layout title="Achievement">
+    <>
       <h1>Achievement</h1>
       <ArticleListItem
         img="/images/achievements/yahoo-hackathon.jpg"
@@ -82,7 +81,7 @@ const Achievement: NextPage = ({}) => {
           Photo Coverage - courtacy Rahul
         </a>
       </ArticleListItem>
-    </Layout>
+    </>
   );
 };
 

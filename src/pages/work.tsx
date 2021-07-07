@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
 import ArticleListItem from "../components/ArticleListItem/ArticleListItem";
-import Layout from "../hoc/Layout";
 
 const Work: NextPage = ({}) => {
   return (
-    <Layout title="Work">
+    <>
       <h1>Work</h1>
       <p>
         (<strong>in progress</strong> - but here are few of the projects
@@ -57,7 +56,7 @@ const Work: NextPage = ({}) => {
                          integrated, global petroleum and chemicals enterprise - worked at digitas."
         info2="RequireJS, Multi-language, SASS, Gulp."
       />
-    </Layout>
+    </>
   );
 };
 
