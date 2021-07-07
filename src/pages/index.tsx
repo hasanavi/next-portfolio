@@ -4,22 +4,25 @@ import Image from "next/image";
 import Layout from "../hoc/Layout";
 import Intro from "../components/Intro/Intro";
 import KeepInTouch from "../components/KeepInTouch/KeepInTouch";
+import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
     <Layout title="Home">
       <h1>About Me</h1>
       <Intro className="long">
-        <span className="intro-text">Hello, My name is Hasan Azizul Haque</span>
-        <span className="intro-copy">
-          I&apos;m a London based Javascript Developer. I have over 10 years
-          experience (4 years full stack + 6 years front-end) developing web and
+        <span className={styles.introText}>
+          Hello, My name is Hasan Azizul Haque
+        </span>
+        <span className={styles.introCopy}>
+          I&apos;m a London based Javascript Developer. I have over 14 years
+          experience (5 years full stack + 9 years front-end) developing web and
           mobile application. I love building unique, efficient site and
           passionate about writing clean code.
         </span>
       </Intro>
       <KeepInTouch />
-      <h2 className="h3 text-center">
+      <h2 className="text-center">
         I&apos;ve been lucky to work on these projects:
       </h2>
       <Link href="/work">

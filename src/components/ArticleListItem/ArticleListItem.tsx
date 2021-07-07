@@ -1,11 +1,12 @@
+import Image from "next/image";
 import type { FC } from "react";
 
-import "./ArticleListItem.css";
+import styles from "./ArticleListItem.module.css";
 
 interface articleListItemProps {
-  publishDate: string;
+  publishDate?: string;
   info1: string;
-  info2: string;
+  info2?: string;
   img: string;
   title: string;
 }
@@ -36,7 +37,7 @@ const ArticleListItem: FC<articleListItemProps> = (props) => {
   if (props.img) {
     imgColumn = (
       <div className="cell small-12 medium-6 article-list-item__image-container">
-        {/* <img src={props.img} alt={props.title} /> */}
+        <Image src={props.img} alt={props.title} width={420} height={233} />
       </div>
     );
 

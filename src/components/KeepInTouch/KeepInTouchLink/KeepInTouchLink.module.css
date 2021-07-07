@@ -1,25 +1,22 @@
-.keep-in-touch-link {
-    a {
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        margin: 0 5px;
+.keepInTouchLink a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 5px;
+}
 
-        &:hover,
-        &:focus,
-        &:active {
-            text-decoration: underline;
-        }
-    }
+.keepInTouchLink a:hover,
+.keepInTouchLink a:focus,
+.keepInTouchLink a:active {
+  text-decoration: underline;
+}
 
-    img,
-    span {
-        display: block;
-        margin: 10px auto 0;
-    }
+.keepInTouchLink img,
+.keepInTouchLink span {
+  display: block;
+  margin: 10px auto 0;
+}
 
-    img {
-       width: 80px; 
-    }
-
+.keepInTouchLink img {
+  width: 80px;
 }

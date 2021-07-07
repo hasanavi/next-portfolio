@@ -1,6 +1,7 @@
+import Image from "next/image";
 import { FC } from "react";
 
-import style from "./KeepInTouchLink.module.css";
+import styles from "./KeepInTouchLink.module.css";
 
 interface KeepInTouchLinkProps {
   href: string;
@@ -15,9 +16,9 @@ const KeepInTouchLink: FC<KeepInTouchLinkProps> = ({
   alt,
   text,
 }) => (
-  <li className="keep-in-touch-link">
+  <li className={styles.keepInTouchLink}>
     <a href={href} target="_blank" rel="noreferrer">
-      {/* <img src={img} alt={alt} /> */}
+      <Image src={img} alt={alt} width={80} height={80} />
       <span>{text}</span>
     </a>
   </li>
