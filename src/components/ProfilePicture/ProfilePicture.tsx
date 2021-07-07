@@ -13,6 +13,7 @@ const profilePicture: FC = () => (
             alt="Picture of Hasan Azizul Haque"
             width={150}
             height={150}
+            priority
           />
         </a>
       </Link>

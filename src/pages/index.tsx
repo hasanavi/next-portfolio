@@ -32,6 +32,7 @@ const Home: NextPage = () => {
             alt="All clients logo"
             width={870}
             height={218}
+            priority
           />
         </a>
       </Link>

@@ -37,7 +37,13 @@ const ArticleListItem: FC<articleListItemProps> = (props) => {
   if (props.img) {
     imgColumn = (
       <div className="cell small-12 medium-6 article-list-item__image-container">
-        <Image src={props.img} alt={props.title} width={420} height={233} />
+        <Image
+          src={props.img}
+          alt={props.title}
+          width={420}
+          height={233}
+          priority
+        />
       </div>
     );
 
