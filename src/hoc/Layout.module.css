@@ -37,7 +37,11 @@
   color: profile-tertiary-color;
 }
 
-@media (min-width: 768px) {
+.main {
+  padding-bottom: 15px;
+}
+
+@media (medium) {
   .container {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;

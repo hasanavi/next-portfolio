@@ -1,77 +1,85 @@
-/* .article-list-item {
-  $root: &;
+@value colors: "../../styles/Colors.module.css";
+@value profile-secondary-color, profile-tertiary-color, profile-border-color from colors;
+@value medium from "../../styles/Breakpoints.module.css";
 
-  &:last-child {
-    .cell {
-      @include global-border(false, true);
-    }
+.articleListItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.articleListItem:last-child {
+  border-bottom: 3px solid profile-border-color;
+}
+
+.infoContainer,
+.imageContainer {
+  border-top: 3px solid profile-border-color;
+  padding: 10px 0;
+  position: relative;
+}
+
+.time {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1;
+  font-style: italic;
+}
+
+.heading {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.infoSeparator {
+  display: block;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.additionalInfo {
+  margin-top: 10px;
+}
+.additionalInfo a {
+  display: block;
+}
+
+.infoSeparator:first-of-type {
+  color: profile-secondary-color;
+}
+
+.infoSeparator:last-of-type {
+  color: profile-tertiary-color;
+}
+
+.info1,
+.info2 {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+@media (medium) {
+  .articleListItem {
+    flex-direction: row;
   }
 
-  .cell {
-    @include global-border();
-  }
-  #{$root}__time {
-    display: block;
-    margin-bottom: 10px;
-    line-height: 1;
-    font-style: italic;
+  .infoContainer {
+    margin-right: 40px;
+    padding: 15px 0;
   }
 
-  #{$root}__heading {
-    margin-bottom: 0;
-    line-height: 1;
+  .imageContainer {
+    flex: 0 0 50%;
+    padding: 15px 0;
   }
 
-  &__info-separator {
-    display: block;
-    line-height: 1;
-    font-weight: bold;
-    font-size: 28px;
-
-    &:first-of-type {
-      color: $profile-secondary-color;
-    }
-
-    &:last-of-type {
-      color: $profile-tertiary-color;
-    }
+  .imageContainer::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    bottom: 0;
+    width: 3px;
+    background-color: #e1e1e1;
+    left: -20px;
   }
-
-  &__info1,
-  &__info2 {
-    margin-bottom: 0;
-    font-size: 18px;
-  }
-
-  &__additional-info {
-    margin-top: 10px;
-    a {
-      display: block;
-    }
-  }
-
-  &--with-image {
-    #{$root}__info-container.cell {
-      @include breakpoint(medium) {
-        margin-right: 40px;
-        position: relative;
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: -3px;
-          bottom: 0;
-          width: 3px;
-          background-color: $profile-border-color;
-          right: -30px;
-        }
-      }
-    }
-
-    #{$root}__image-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-} */
+}
