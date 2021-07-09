@@ -32,6 +32,9 @@ const Home: NextPage = () => {
             width={870}
             height={218}
             priority
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOcaQwAAWsAzpQ06/UAAAAASUVORK5CYII="
+            loading="eager"
           />
         </a>
       </Link>

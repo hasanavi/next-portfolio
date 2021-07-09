@@ -66,10 +66,11 @@
   .infoContainer {
     margin-right: 40px;
     padding: 15px 0;
+    flex: 1;
   }
 
   .imageContainer {
-    flex: 0 0 50%;
+    flex: 1;
     padding: 15px 0;
   }
 

@@ -19,10 +19,6 @@ const ArticleListItem: FC<articleListItemProps> = ({
   title,
   children,
 }) => {
-  let imgColumn;
-  let articleListItemClass = "article-list-item";
-  let additionalInfo;
-
   return (
     <div className={styles.articleListItem}>
       <div className={styles.infoContainer}>
@@ -42,7 +38,17 @@ const ArticleListItem: FC<articleListItemProps> = ({
       </div>
       {img ? (
         <div className={styles.imageContainer}>
-          <Image src={img} alt={title} width={420} height={233} priority />
+          <Image
+            src={img}
+            alt={title}
+            width={420}
+            height={233}
+            priority
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOcaQwAAWsAzpQ06/UAAAAASUVORK5CYII="
+            loading="eager"
+            layout="responsive"
+          />
         </div>
       ) : null}
     </div>
