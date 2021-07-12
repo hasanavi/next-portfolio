@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { FC } from "react";
 
 import styles from "./ArticleListItem.module.css";
@@ -38,17 +37,7 @@ const ArticleListItem: FC<articleListItemProps> = ({
       </div>
       {img ? (
         <div className={styles.imageContainer}>
-          <Image
-            src={img}
-            alt={title}
-            width={420}
-            height={233}
-            priority
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOcaQwAAWsAzpQ06/UAAAAASUVORK5CYII="
-            loading="eager"
-            layout="responsive"
-          />
+          <img src={img} alt={title} />
         </div>
       ) : null}
     </div>

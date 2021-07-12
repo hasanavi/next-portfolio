@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import Intro from "../components/Intro/Intro";
 import KeepInTouch from "../components/KeepInTouch/KeepInTouch";
 import styles from "../styles/Home.module.css";
@@ -26,15 +25,10 @@ const Home: NextPage = () => {
       </h2>
       <Link href="/work">
         <a>
-          <Image
+          <img
+            className={styles.img}
             src="/images/clients.png"
             alt="All clients logo"
-            width={870}
-            height={218}
-            priority
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mOcaQwAAWsAzpQ06/UAAAAASUVORK5CYII="
-            loading="eager"
           />
         </a>
       </Link>

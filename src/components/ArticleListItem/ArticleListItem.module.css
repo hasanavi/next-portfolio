@@ -18,6 +18,10 @@
   position: relative;
 }
 
+.imageContainer img {
+  width: 100%;
+}
+
 .time {
   display: block;
   margin-bottom: 10px;
