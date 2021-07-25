@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dfdcd62f-f450-4965-bba8-52cbe408b9ae/deploy-status)](https://app.netlify.com/sites/affectionate-hoover-871ba1/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
