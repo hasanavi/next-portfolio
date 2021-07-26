@@ -10,9 +10,11 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
         className={styles.form}
         name="contact"
         method="POST"
+        action="/success"
         data-netlify="true"
         netlify-honeypot="title"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <p className={styles.hidden}>
           <label>
             Your title <input name="title" />
