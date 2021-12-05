@@ -1,13 +1,14 @@
 .keepInTouch {
-  margin: 0 auto 25px;
-  width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 }
 
 .keepInTouchLinks {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }

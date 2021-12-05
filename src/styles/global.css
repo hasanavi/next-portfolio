@@ -85,12 +85,12 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -104,38 +104,38 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+	display: block;
 }
 body {
-  line-height: 1;
+	line-height: 1;
 }
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
 blockquote,
 q {
-  quotes: none;
+	quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+	content: "";
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -150,59 +150,63 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Dosis", sans-serif;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  margin-top: 0;
+	font-family: "Dosis", sans-serif;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	margin-top: 0;
 }
 
 h1,
 .h1 {
-  font-size: 32px;
+	font-size: 32px;
 }
 
 h2,
 .h2 {
-  font-size: 24px;
+	font-size: 24px;
 }
 
 h3,
 .h3 {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 h4,
 .h4 {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 h5,
 .h5 {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.025rem;
-  line-height: 1.2;
-  margin: 0;
-  margin-bottom: 1rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.025rem;
+	line-height: 1.2;
+	margin: 0;
+	margin-bottom: 1rem;
 }
 
 a {
-  font-family: "Dosis", sans-serif;
-  font-weight: 600;
+	font-family: "Dosis", sans-serif;
+	font-weight: 600;
 }
 
 b,
 strong,
 em {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
+}
+
+.block {
+	margin-bottom: 40px;
 }
