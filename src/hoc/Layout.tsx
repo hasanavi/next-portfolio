@@ -17,6 +17,10 @@ const Layout: FC = ({ children }) => {
 					name="description"
 					content="I'm a London based Javascript Developer.  I love building unique, efficient site and passionate about writing clean code."
 				/>
+				<meta
+					name="google-site-verification"
+					content="M1jhmcaigtyQRqndtKT52hYiQWU0jfNcsZsbXRu8xYw"
+				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className={styles.container}>
